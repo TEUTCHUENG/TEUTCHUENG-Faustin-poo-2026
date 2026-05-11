@@ -1,0 +1,26 @@
+===== RAPPORT TECHNIQUE IPPLAN-MANAGER =====
+
+1. Besoins exprimes par l'utilisateur
+- WIFI_INVITES : 80 hotes
+- ADMINISTRATION : 50 hotes
+- VOIP : 40 hotes
+- COMPTABILITE : 20 hotes
+- SERVEURS : 15 hotes
+
+2. Plan d'adressage propose
+- WIFI_INVITES : 10.10.0.0/25 | Capacite : 126 hotes
+- ADMINISTRATION : 10.10.0.128/26 | Capacite : 62 hotes
+- VOIP : 10.10.0.192/26 | Capacite : 62 hotes
+- COMPTABILITE : 10.10.1.0/27 | Capacite : 30 hotes
+- SERVEURS : 10.10.1.32/27 | Capacite : 30 hotes
+
+3. VLANs proposes
+- VLAN 10 | WIFI_INVITES | 10.10.0.0/25
+- VLAN 20 | ADMINISTRATION | 10.10.0.128/26
+- VLAN 30 | VOIP | 10.10.0.192/26
+- VLAN 40 | COMPTABILITE | 10.10.1.0/27
+- VLAN 50 | SERVEURS | 10.10.1.32/27
+
+4. Recommandations techniques
+- [ÉLEVÉE] Isolation du WiFi : Le VLAN WIFI_INVITES doit être isolé des VLANs internes sensibles.
+- [ÉLEVÉE] Protection du VLAN Serveurs : Le VLAN SERVEURS doit être protégé par des ACL et surveillé en priorité.
