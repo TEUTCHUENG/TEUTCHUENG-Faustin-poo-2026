@@ -1,0 +1,4 @@
+ID;Nom;AdresseReseau;CIDR;Capacite
+10;gtr1;172.168.1.0;25;126
+20;gtr2;172.168.1.128;26;62
+30;LIRT;172.168.1.192;26;62

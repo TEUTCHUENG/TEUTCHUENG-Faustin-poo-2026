@@ -1,0 +1,25 @@
+===== RAPPORT TECHNIQUE IPPLAN-MANAGER =====
+
+1. Besoins exprimes par l'utilisateur
+- TECHNIQUE : 120 hotes
+- INVITES : 100 hotes
+- CAMERAS : 60 hotes
+- SUPPORT  : 35 hotes
+- DIRECTION  : 25 hotes
+
+2. Plan d'adressage propose
+- TECHNIQUE : 172.16.0.0/25 | Capacite : 126 hotes
+- INVITES : 172.16.0.128/25 | Capacite : 126 hotes
+- CAMERAS : 172.16.1.0/26 | Capacite : 62 hotes
+- SUPPORT  : 172.16.1.64/26 | Capacite : 62 hotes
+- DIRECTION  : 172.16.1.128/27 | Capacite : 30 hotes
+
+3. VLANs proposes
+- VLAN 10 | TECHNIQUE | 172.16.0.0/25
+- VLAN 20 | INVITES | 172.16.0.128/25
+- VLAN 30 | CAMERAS | 172.16.1.0/26
+- VLAN 40 | SUPPORT  | 172.16.1.64/26
+- VLAN 50 | DIRECTION  | 172.16.1.128/27
+
+4. Recommandations techniques
+Aucune recommandation particuliere.

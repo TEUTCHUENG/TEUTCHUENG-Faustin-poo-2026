@@ -1,0 +1,4 @@
+===== RECOMMANDATIONS IPPLAN-MANAGER =====
+
+[ÉLEVÉE] Isolation du WiFi : Le VLAN WIFI_INVITES doit être isolé des VLANs internes sensibles.
+[ÉLEVÉE] Protection du VLAN Serveurs : Le VLAN  SERVEURS  doit être protégé par des ACL et surveillé en priorité.

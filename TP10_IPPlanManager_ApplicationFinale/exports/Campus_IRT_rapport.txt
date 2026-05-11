@@ -1,0 +1,28 @@
+===== RAPPORT TECHNIQUE IPPLAN-MANAGER =====
+
+1. Besoins exprimes par l'utilisateur
+- ETUDIANTS : 500 hotes
+- WIFI_INVITES : 200 hotes
+- ENSEIGNANTS : 120 hotes
+- LABORATOIRES : 60 hotes
+- SERVEURS  : 30 hotes
+
+2. Plan d'adressage propose
+- ETUDIANTS : 10.10.0.0/23 | Capacite : 510 hotes
+- WIFI_INVITES : 10.10.2.0/24 | Capacite : 254 hotes
+- ENSEIGNANTS : 10.10.3.0/25 | Capacite : 126 hotes
+- LABORATOIRES : 10.10.3.128/26 | Capacite : 62 hotes
+- SERVEURS  : 10.10.3.192/27 | Capacite : 30 hotes
+
+3. VLANs proposes
+- VLAN 10 | ETUDIANTS | 10.10.0.0/23
+- VLAN 20 | WIFI_INVITES | 10.10.2.0/24
+- VLAN 30 | ENSEIGNANTS | 10.10.3.0/25
+- VLAN 40 | LABORATOIRES | 10.10.3.128/26
+- VLAN 50 | SERVEURS  | 10.10.3.192/27
+
+4. Recommandations techniques
+- [MOYENNE] VLAN de grande taille : Le VLAN ETUDIANTS possède une grande capacité. Il faut surveiller les broadcasts.
+- [ÉLEVÉE] Isolation du WiFi : Le VLAN WIFI_INVITES doit être isolé des VLANs internes sensibles.
+- [MOYENNE] VLAN de grande taille : Le VLAN WIFI_INVITES possède une grande capacité. Il faut surveiller les broadcasts.
+- [ÉLEVÉE] Protection du VLAN Serveurs : Le VLAN SERVEURS  doit être protégé par des ACL et surveillé en priorité.

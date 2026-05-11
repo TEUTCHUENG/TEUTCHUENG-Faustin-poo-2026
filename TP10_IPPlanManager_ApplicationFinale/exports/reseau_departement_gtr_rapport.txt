@@ -1,0 +1,19 @@
+===== RAPPORT TECHNIQUE IPPLAN-MANAGER =====
+
+1. Besoins exprimes par l'utilisateur
+- gtr1 : 70 hotes
+- gtr2 : 53 hotes
+- LIRT : 43 hotes
+
+2. Plan d'adressage propose
+- gtr1 : 172.168.1.0/25 | Capacite : 126 hotes
+- gtr2 : 172.168.1.128/26 | Capacite : 62 hotes
+- LIRT : 172.168.1.192/26 | Capacite : 62 hotes
+
+3. VLANs proposes
+- VLAN 10 | gtr1 | 172.168.1.0/25
+- VLAN 20 | gtr2 | 172.168.1.128/26
+- VLAN 30 | LIRT | 172.168.1.192/26
+
+4. Recommandations techniques
+Aucune recommandation particuliere.
